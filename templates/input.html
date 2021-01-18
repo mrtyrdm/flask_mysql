@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p style="font-family:verdana">
+        Choose Job Position Applying for:<SELECT name="jobid" style="font-family:verdana">
+            {% for j in joblist %}
+            <OPTION value={{j.id}}>{{j.name}}</OPTION>
+          {% endfor %}
+          <OPTION value="asdas">asdfasd</OPTION>
+        </SELECT>
+        </p>
+
+        {{ test }}
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Yapısı</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container py-3">
+        <div class="row">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <span class="anchor" id="formLogin"></span>
+                    <!-- form card login -->
+<form  action="/hastakayit" method="post">
+    <div class="card card-outline-secondary">
+        <div class="card-header">
+            <h3 class="mb-0">Hasta Kayıt Ekleme</h3>
+        </div>
+        <div class="card-body">
+            <form autocomplete="off" class="form" id="formLogin" name="formLogin" role="form">
+                <div class="form-group">
+                    <label for="uname1">Ad</label>
+                    <input type="text" name="isim" placeholder="Adı" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label>Soyad</label>
+                    <input type="text" name="soyad" placeholder="Soyadı" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label class="form-check-label">
+                        <label>Telefon Numarası</label>
+                        <input type="number" name="tel"  class="form-control" >
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="form-check-label">
+                        <label>Adres</label>
+                        <textarea name="adres"  cols="30" rows="10" placeholder="Adres" class="form-control" ></textarea>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="form-check-label">
+                        <label>İlgili doktor</label>
+                        <select name="doctor" id="" class="form-control">
+                            <option value="0">test</option>
+                            <option value="1">tesdfsdst</option>
+                            <option value="2">teasdfst</option>
+                            <option value="3">tesasdfast</option>
+                        </select>
+                    </label>
+                </div>
+                <input class="btn btn-success btn-lg float-right" type="submit" value="Gönder">
+            </form>
+        </div>
+        <!--/card-block-->
+    </div>
+</form>
+                    <!-- /form card login -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
